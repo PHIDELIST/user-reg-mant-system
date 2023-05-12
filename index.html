@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <nav id="nav-list">
+        <li> KYU UNIVERSITY</li>
+        <li>DEPARTMENTS</li>
+        <li>CAREERS</li>
+        <li>RESOURCES</li>
+        <li>ABOUT</li>
+    </nav>
+</header>
+<body>
+    <main>
+        <div class="reg-frm">
+  <h1>PLEASE REGISTER HERE</h1>
+  
+  <h2>Registration Form</h2>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="id">ID:</label>
+    <input type="text" id="id" required>
+    
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="">Select a country</option>
+      <option value="USA">Kenya</option>
+      <option value="UK">Uganda</option>
+      <option value="Canada">Tanzania</option>
+      
+    </select>
+    
+    <label for="language">Language Spoken:</label>
+    <input type="text" id="language" required>
+    
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>User List</h2>
+</div>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Country</th>
+        <th>Language Spoken</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="userTableBody">
+    </tbody>
+  </table>
+
+  <script src="./script.js"></script>
+</main>
+</body>
+</html>
