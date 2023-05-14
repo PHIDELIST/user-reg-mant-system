@@ -4,6 +4,7 @@ main{
     padding: 20px;
     align-items: center;
     justify-content: center;
+    max-inline-size: 1440px;
 
 }
 .reg-frm{
@@ -12,15 +13,14 @@ main{
     justify-content: center;
     align-items: center;
 }
-#nav-list{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    justify-content: space-between;
-    background-color: bisque;
-    padding: 25px;
-    flex-wrap: nowrap;}
+header{
+    
+    width: 100%;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 label {
     display: block;
@@ -44,4 +44,64 @@ th, td {
 }
 th {
     background-color: #f2f2f2;
+}
+#userTableBody{
+    background-color: #f2f2f2;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.select-features-company{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-select{
+    text-decoration: none;
+    padding:20px;
+    border: none;
+    background: #b16161;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+nav p{
+    font-weight: 700;
+    font-size: 30px;
+    }
+nav{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: bisque;
+}
+@media only screen and (max-width: 375px) {
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+main{
+    min-inline-size: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
 }

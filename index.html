@@ -5,13 +5,35 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <header>
-    <nav id="nav-list">
-        <li> KYU UNIVERSITY</li>
-        <li>DEPARTMENTS</li>
-        <li>CAREERS</li>
-        <li>RESOURCES</li>
-        <li>ABOUT</li>
-    </nav>
+  <nav>
+    <p>KIRINYAGA UNIVERSITY</p>
+    
+    <ul class="nav-list">
+      <div class="select-features-company"></div>
+        <li>
+          <select class="nav-select">
+            <option value="0">Resources:</option>
+            <option value="1">Revision</option>
+            <option value="2">Calendar</option>
+            <option value="2">Sports</option>
+            <option value="2">Research</option>
+          </select>
+          
+        </li>
+        
+        <li>
+          <select class="nav-select">
+            <option value="0">Branches:</option>
+            <option value="1">Kisumu</option>
+            <option value="2">Nairobi</option>
+            <option value="2">Siaya</option>
+            
+          </select>
+        </li>
+      </div>
+      
+    </ul>
+  </nav>
 </header>
 <body>
     <main>
@@ -29,9 +51,9 @@
     <label for="country">Country:</label>
     <select id="country" required>
       <option value="">Select a country</option>
-      <option value="USA">Kenya</option>
-      <option value="UK">Uganda</option>
-      <option value="Canada">Tanzania</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Tanzania">Tanzania</option>
       
     </select>
     
